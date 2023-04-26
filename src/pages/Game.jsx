@@ -87,7 +87,12 @@ class Game extends Component {
       results,
       userCorrectAnswers,
       userIncorrectAnswers,
+      clickedAnswer,
     } = this.state;
+
+    if (clickedAnswer !== null) {
+      return;
+    }
 
     const { dispatch } = this.props;
     const answerObj = shuffledAnswers[index];
@@ -115,7 +120,7 @@ class Game extends Component {
       dispatch(updateScore({ points: 0, isCorrect: false }));
     }
 
-    this.setState({ clickedAnswer: index, nextButton: true });
+    this.setState({ clickedAnswer: index, nextButton: true, timer: 0 });
   };
 
   startTimer = (timerValue) => {
