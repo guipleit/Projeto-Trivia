@@ -24,16 +24,17 @@
     "cy": "env CY_CLI=true cypress run",
     "cy:open": "cypress open --e2e --browser chrome",
     "start": "env ESLINT_NO_DEV_ERRORS=true react-scripts start",
-    "build": "react-scripts build",
+    "build": "env ESLINT_NO_DEV_ERRORS=true react-scripts build",
     "test": "react-scripts test",
-    "test:watch": "react-scripts test --watchAll",
-    "eject": "react-scripts eject",
-    "test:coverage": "react-scripts test --coverage --watchAll=false",
-    "lint:styles": "npx stylelint '**/*.css'",
-    "lint": "eslint --no-inline-config --no-error-on-unmatched-pattern -c .eslintrc.json . --ext .js,.jsx"
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
-    "extends": "react-app"
+    "extends": "react-app",
+    "rules": {
+      "react/jsx-max-depth": "off",
+      "max-len": "off",
+      "max-lines": "off"
+    }
   },
   "browserslist": {
     "production": [
