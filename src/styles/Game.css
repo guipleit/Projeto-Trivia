@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300&display=swap');
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url(https://wallpapercave.com/wp/wp9440197.jpg);
+    font-family: 'Nunito Sans', sans-serif;
+
+}
+
+.game-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    max-width: 1280px;
+    margin-left: 52px;
+}
+
+.content-container {
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.question-category,
+.question-text {
+    text-align: center;
+    margin: 15px 0;
+    width: 500px;
+    height: 100px;
+    word-wrap: break-word;
+    overflow: hidden;
+
+}
+
+.question-category {
+    margin-top: 100px;
+    font-size: 40px;
+    color: black
+}
+
+.question-text {
+    background-color: white;
+    box-shadow: 1px 4px 13px 2px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    margin: 15px 0;
+    overflow: hidden;
+    text-align: center;
+    word-wrap: break-word;
+    padding: 10px;
+}
+
+.answer-options {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 500px;
+}
+
+.answer-options button {
+    width: 45%;
+    height: 60px;
+    padding: 10px;
+    font-size: 18px;
+    border: 3px solid transparent;
+    border-radius: 5px;
+    background: #ffffff;
+    cursor: pointer;
+    transition: border-color 0.3s;
+    box-sizing: border-box;
+    text-align: center;
+    margin: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.answer-options button:hover {
+    border-color: #75b1bc;
+}
+
+.btn-next {
+    margin-top: 15px;
+    padding: 12px 20px;
+    background: #79c7a5;
+    color: #FFFFFF;
+    border: 1px solid #79c7a5;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    width: 100%;
+}
+
+.timer {
+    font-size: 26px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.timer-span {
+    color: black;
+    font-size: 30px
+}
+
+.remaining-questions {
+    font-size: 26px;
+    margin-top: 10px;
+    color: black;
+    text-align: center;
+}
+
+.remaining-questions-span {
+    font-size: 30px
+}

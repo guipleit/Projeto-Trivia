@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300&display=swap');
+
+* {
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+body {
+    background-image: url(https://wallpapercave.com/wp/wp9440197.jpg);
+}
+
+.settings-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.settings-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 489px;
+    padding: 20px;
+    background: #FFFFFF;
+    box-shadow: 1px 4px 13px 2px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+.settings-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+}
+
+.settings-form select {
+    width: 100%;
+    height: 50px;
+    font-size: 16px;
+    padding: 12px 16px;
+    background: #FFFFFF;
+    border: 1px solid #E1E5EB;
+}
+
+.settings-form button {
+    margin-top: 20px;
+    width: 100%;
+    height: 40px;   
+    background: #79c7a5;
+    color: #FFFFFF;
+    border: 1px solid #E1E5EB;
+    cursor: pointer;
+}
+
+.settings-title {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 150%;
+    text-align: center;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: #75b1bc;
+    margin-bottom: 20px;
+
+}
